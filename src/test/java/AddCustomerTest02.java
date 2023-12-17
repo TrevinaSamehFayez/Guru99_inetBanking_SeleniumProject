@@ -15,6 +15,7 @@ public class AddCustomerTest02 extends TestBase {
     private AddCustomer customer;
     @Test
     public void AddCustomerTest() throws IOException, InterruptedException {
+        tests = extentrep.createTest("Add Customer", "This test case validates adding a customer successfully");
         login = new LoginClass(driver);
         customer = new AddCustomer(driver);
         login.SignIn(username, password);
