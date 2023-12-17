@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ <suite name="All Test Suite">
+     <test name="Login">
+         <classes>
+             <class name = "LoginTestCase01" />
+         </classes>
+     </test>
+
+    <test name="Add Customer">
+        <classes>
+            <class name = "AddCustomerTest02" />
+        </classes>
+    </test>
+
+    <test name="Edit Customer">
+        <classes>
+            <class name = "EditCustomerTest03" />
+        </classes>
+    </test>
+
+    <test name="Add Account">
+        <classes>
+            <class name = "AddAccountTest04" />
+        </classes>
+    </test>
+
+    <test name="Fund Transfer">
+        <classes>
+            <class name = "FundTransferTest05" />
+        </classes>
+    </test>
+
+    <test name="Withdrawal">
+        <classes>
+            <class name = "WithdrawalTest06" />
+        </classes>
+    </test>
+
+    <test name="Delete Account">
+        <classes>
+            <class name = "DeleteAccountTest07" />
+        </classes>
+    </test>
+
+ </suite>
