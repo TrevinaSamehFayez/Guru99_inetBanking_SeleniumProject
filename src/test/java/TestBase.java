@@ -50,25 +50,4 @@ public class TestBase {
         }
 
     }
-
-    public class DateTime {
-
-        public static String getCurrentTime(String timeFormat) {
-            return new SimpleDateFormat(timeFormat).format(Calendar.getInstance().getTime());
-        }
-
-        public static String convertDateToNewFormat(String dateStr, String oldFormat, String newFormat) throws ParseException {
-            DateFormat sdf = new SimpleDateFormat(oldFormat, Locale.US);
-            Date dateParse;
-            String newDate = null;
-            try {
-                dateParse = sdf.parse(dateStr);
-                newDate = (new SimpleDateFormat(newFormat)).format(dateParse);
-                System.out.println(newDate);
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
-            return newDate;
-        }
-    }
 }
